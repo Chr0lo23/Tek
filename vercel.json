@@ -1,0 +1,19 @@
+{
+  "routes": [
+    {
+      "src": "/build/(.*)\\.js",
+      "headers": { "Content-Encoding": "br" },
+      "continue": true
+    },
+    {
+      "src": "/build/(.*)\\.wasm",
+      "headers": { "Content-Encoding": "br" },
+      "continue": true
+    },
+    {
+      "src": "/build/(.*)\\.data",
+      "headers": { "Content-Encoding": "br" },
+      "continue": true
+    }
+  ]
+}
